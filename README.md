@@ -1,64 +1,29 @@
-<div align="center">
-  <a href="https://sigmoidal.ai">
-    <img src="https://sigmoidal.ai/logo.png" alt="Sigmoidal Vision Logo" width="200">
-  </a>
+# SigmoidalVision
 
-  <h1>Sigmoidal Vision</h1>
-  
-  <p>
-    A powerful Python library for computer vision tasks, designed for educational purposes.
-  </p>
-
-  <p>
-    <a href="https://sigmoidalvision.readthedocs.io/">Docs</a>
-    ·
-    <a href="https://github.com/sigmoidal/sigmoidalvision/issues">Report Bug</a>
-    ·
-    <a href="https://github.com/sigmoidal/sigmoidalvision/issues">Request Feature</a>
-  </p>
-
-  <p>
-    <a href="https://pypi.org/project/sigmoidalvision/">
-      <img alt="PyPI" src="https://img.shields.io/pypi/v/sigmoidalvision?color=blue">
-    </a>
-    <a href="https://github.com/sigmoidal/sigmoidalvision/blob/main/LICENSE">
-      <img alt="License" src="https://img.shields.io/github/license/sigmoidal/sigmoidalvision?color=green">
-    </a>
-  </p>
-</div>
-
-## About
-
-Sigmoidal Vision is a Python library developed by [Sigmoidal](https://sigmoidal.ai) to facilitate learning and exploration in the field of computer vision. It provides a collection of tools, utilities, and examples to help students and researchers work with datasets, models, and visualizations.
+SigmoidalVision is a Python package for computer vision and machine learning tasks. It is currently under development and aims to provide a set of tools and utilities for working with image and video data.
 
 ## Features
 
-- Easy-to-use APIs for common computer vision tasks
-- Utilities for loading and preprocessing datasets
-- Integration with popular deep learning frameworks
-- Visualization tools for insights and analysis
-- Detailed documentation and code examples
+- Download media assets from a catalog
+- Verify the integrity of downloaded files using MD5 hash
 
 ## Installation
 
-You can install Sigmoidal Vision via pip:
+The package is not yet available on PyPI. To install the development version, you can clone the repository and install it using Poetry:
 
 ```bash
-pip install sigmoidalvision
+git clone https://github.com/carlosfab/sigmoidalvision.git
+cd sigmoidalvision
+poetry install
 ```
 
-## Getting Started
+## Usage
 
-Check out the documentation for a quick start guide and detailed usage instructions.
+Here's an example of how to download a media asset using SigmoidalVision:
 
-## Examples
+```python
+from sigmoidalvision.assets import download_media_asset, MediaAsset
+download_media_asset(MediaAsset.AIRPORT)
+# File santos_dumont_airport.mp4 downloaded successfully.
+```
 
-Explore the examples directory to see how Sigmoidal Vision can be used for various computer vision tasks.
-
-## Contributing
-
-Contributions are welcome! Please read our contributing guidelines to get started.
-
-## License
-
-Sigmoidal Vision is released under the MIT License.
