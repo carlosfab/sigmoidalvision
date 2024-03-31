@@ -9,12 +9,10 @@ SigmoidalVision is a Python package for computer vision and machine learning tas
 
 ## Installation
 
-The package is not yet available on PyPI. To install the development version, you can clone the repository and install it using Poetry:
+SigmoidalVision can now be installed directly from PyPI with the following command:
 
 ```bash
-git clone https://github.com/carlosfab/sigmoidalvision.git
-cd sigmoidalvision
-poetry install
+pip install sigmoidalvision
 ```
 
 ## Usage
@@ -27,3 +25,4 @@ download_media_asset(MediaAsset.AIRPORT)
 # File santos_dumont_airport.mp4 downloaded successfully.
 ```
 
+Please note that SigmoidalVision is still under development, and features may be added or changed in future releases.
